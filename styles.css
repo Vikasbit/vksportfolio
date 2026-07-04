@@ -171,6 +171,7 @@
   }
   .about-panel p{font-size:14.5px;line-height:1.9;color:#ece3ff;margin-bottom:18px;}
   .about-panel p:last-of-type{margin-bottom:28px;}
+  .scramble-text.is-scrambling{color:#ffd8ad;text-shadow:0 0 6px rgba(255,157,61,.35);}
   .loadbar{height:14px;border:2px solid var(--violet);border-radius:8px;overflow:hidden;background:rgba(0,0,0,.4);}
   .loadbar-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--amber-deep),var(--amber));transition:width 1.4s ease;}
   .loadbar-label{font-size:10px;color:var(--text-dim);margin-top:10px;letter-spacing:1px;}
@@ -231,6 +232,7 @@
     border-radius:0 0 4px 4px;
   }
   .cart:hover{transform:translateY(-10px) rotateX(4deg);box-shadow:0 24px 50px -18px rgba(167,139,250,.55);}
+  .cart:focus-visible{outline:2px solid var(--amber);outline-offset:4px;}
   .cart-label{
     background:var(--cart-color, linear-gradient(135deg,#7c5cd6,#3a2670));
     border-radius:5px;padding:16px 12px 12px;min-height:118px;
@@ -272,6 +274,14 @@
   .slot-led{width:9px;height:9px;border-radius:50%;background:#3a2f52;display:inline-block;transition:background .3s, box-shadow .3s;}
   .slot-led.lit{background:var(--amber);box-shadow:0 0 10px 4px var(--amber);}
   .slot-label{font-family:var(--pixel);font-size:8px;color:var(--text-dim);letter-spacing:1px;}
+  .slot-chip{
+    width:14px;height:14px;border-radius:4px;margin-left:4px;
+    background:var(--chip-color, var(--violet-dim));
+    opacity:0;transform:scale(.4);
+    box-shadow:0 0 8px rgba(0,0,0,.4);
+    transition:opacity .25s ease, transform .25s ease;
+  }
+  .slot-chip.active{opacity:1;transform:scale(1);box-shadow:0 0 10px 2px var(--chip-color, var(--violet));}
   .slot-flash{animation:slotFlash .55s ease;}
   @keyframes slotFlash{
     0%{box-shadow:inset 0 4px 10px rgba(0,0,0,.7);}
