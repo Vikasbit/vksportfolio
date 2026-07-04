@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikas Kumar Prajapati — Game Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="crt-overlay"></div>
+<div class="noise"></div>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">VIKAS<span>_</span>KP.exe</div>
+    <ul class="menu" id="menu">
+      <li><a href="#about" data-sec="about"><span class="cursor">▸</span>ABOUT</a></li>
+      <li><a href="#skills" data-sec="skills"><span class="cursor">▸</span>SKILLS</a></li>
+      <li><a href="#projects" data-sec="projects"><span class="cursor">▸</span>PROJECTS</a></li>
+      <li><a href="#education" data-sec="education"><span class="cursor">▸</span>EDUCATION</a></li>
+      <li><a href="#achievements" data-sec="achievements"><span class="cursor">▸</span>ACHIEVEMENTS</a></li>
+      <li><a href="#contact" data-sec="contact"><span class="cursor">▸</span>CONTACT</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="eyebrow">PLAYER ONE — VADODARA, GUJARAT, INDIA</div>
+  <div class="tv">
+    <div class="screen">
+      <div class="glow-ring"></div>
+      <div class="tag">GAME PORTFOLIO // BOOT SEQUENCE</div>
+      <h1 class="title-pixel">VIKAS KUMAR<br>PRAJAPATI</h1>
+      <div class="role-line" id="roleLine"></div>
+      <button class="start-btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">▸ START</button>
+    </div>
+  </div>
+  <div class="hero-stand"></div>
+  <div class="scroll-hint">SCROLL TO CONTINUE ▾</div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">LEVEL 01</div>
+      <h2 class="sec-title">ABOUT THE PLAYER</h2>
+    </div>
+    <div class="about-row">
+      <div class="about-panel" id="aboutPanel">
+        <p>B.Tech Computer Science Engineering student at Parul University (Class of 2027, CGPA 7.12) with 6+ years of freelance UI/UX and graphic design experience. Shipped multiple live, deployed web applications integrating Python, FastAPI, React.js, and Google Gemini AI.</p>
+        <p>Selected contributor for GSSoC'26 in the AI/Agents open-source track. Currently on the hunt for a Software Developer or UI/UX Designer role where design instinct and full-stack execution can ship real products.</p>
+        <div class="loadbar"><div class="loadbar-fill" id="loadFill"></div></div>
+        <div class="loadbar-label">LOADING PROFILE... <span id="loadPct">0%</span></div>
+        <div class="stat-row">
+          <div class="stat"><b>6+ yrs</b><span>UI/UX DESIGN</span></div>
+          <div class="stat"><b>2+ yrs</b><span>FULL-STACK DEV</span></div>
+          <div class="stat"><b>7.12</b><span>CGPA / 10.0</span></div>
+          <div class="stat"><b>4</b><span>SHIPPED PROJECTS</span></div>
+        </div>
+      </div>
+
+      <div class="player-card" aria-hidden="true">
+        <svg viewBox="0 0 300 470" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pcBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#241542"/>
+              <stop offset="1" stop-color="#140c26"/>
+            </linearGradient>
+            <linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8b6ae0"/>
+              <stop offset="1" stop-color="#4c2f8f"/>
+            </linearGradient>
+            <radialGradient id="pcGlow" cx="50%" cy="34%" r="55%">
+              <stop offset="0" stop-color="#ff9d3d" stop-opacity="0.32"/>
+              <stop offset="1" stop-color="#ff9d3d" stop-opacity="0"/>
+            </radialGradient>
+            <pattern id="pcScan" width="4" height="4" patternUnits="userSpaceOnUse">
+              <rect width="4" height="2" fill="#000000" opacity="0.14"/>
+            </pattern>
+          </defs>
+
+          <rect x="0" y="0" width="300" height="470" fill="url(#pcBg)"/>
+          <circle cx="150" cy="150" r="150" fill="url(#pcGlow)"/>
+          <rect x="0" y="0" width="300" height="470" fill="url(#pcScan)"/>
+
+          <g stroke="#a78bfa" stroke-width="2" fill="none" opacity="0.55">
+            <path d="M16,34 L16,16 L34,16"/>
+            <path d="M266,16 L284,16 L284,34"/>
+            <path d="M284,436 L284,454 L266,454"/>
+            <path d="M34,454 L16,454 L16,436"/>
+          </g>
+
+          <text x="26" y="30" font-family="'Press Start 2P',monospace" font-size="9" fill="#ff9d3d">P1</text>
+          <text x="274" y="29" text-anchor="end" font-family="'Press Start 2P',monospace" font-size="7" fill="#7c5cd6">LVL.01</text>
+
+          <g class="pc-float">
+            <path d="M90,260 Q150,222 210,260 L215,302 Q150,332 85,302 Z" fill="#150c26"/>
+            <path d="M75,400 L75,320 Q75,258 150,253 Q225,258 225,320 L225,400 Z" fill="url(#hoodie)"/>
+            <path d="M140,260 L138,400 L162,400 L160,260 Z" fill="#3a2670" opacity="0.55"/>
+            <rect x="128" y="342" width="44" height="26" rx="4" fill="#3a2670" opacity="0.7" stroke="#8b6ae0" stroke-width="1"/>
+            <line x1="138" y1="262" x2="132" y2="300" stroke="#1a1024" stroke-width="3" stroke-linecap="round"/>
+            <line x1="162" y1="262" x2="168" y2="300" stroke="#1a1024" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="132" cy="303" r="3" fill="#1a1024"/>
+            <circle cx="168" cy="303" r="3" fill="#1a1024"/>
+
+            <circle cx="150" cy="175" r="62" fill="#1a1024"/>
+            <path d="M96,150 Q100,110 130,120 Q140,95 155,118 Q170,92 182,120 Q205,112 204,148 Q180,128 150,132 Q120,128 96,150 Z" fill="#150c26"/>
+
+            <path d="M96,150 Q150,95 204,150" fill="none" stroke="#ff9d3d" stroke-width="6" stroke-linecap="round"/>
+            <rect x="86" y="150" width="22" height="40" rx="10" fill="#ff9d3d"/>
+            <rect x="192" y="150" width="22" height="40" rx="10" fill="#ff9d3d"/>
+            <rect x="91" y="156" width="12" height="28" rx="6" fill="#e8720f"/>
+            <rect x="197" y="156" width="12" height="28" rx="6" fill="#e8720f"/>
+
+            <rect class="pc-visor" x="118" y="172" width="64" height="14" rx="7" fill="#ff9d3d"/>
+            <rect x="118" y="172" width="64" height="5" rx="2.5" fill="#ffd8ad" opacity="0.7"/>
+          </g>
+
+          <rect x="112" y="404" width="76" height="34" rx="10" fill="#241832" stroke="#a78bfa" stroke-width="1.5"/>
+          <circle cx="132" cy="421" r="6" fill="#ff9d3d"/>
+          <circle cx="168" cy="421" r="6" fill="#ff9d3d"/>
+          <rect x="146" y="418.5" width="8" height="3" fill="#a78bfa"/>
+          <rect x="148.5" y="416" width="3" height="8" fill="#a78bfa"/>
+
+          <text x="150" y="452" text-anchor="middle" font-family="'Press Start 2P',monospace" font-size="11" fill="#ff9d3d">VIKAS.EXE</text>
+          <text x="150" y="464" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="8" letter-spacing="1" fill="#b7a8d9">READY PLAYER ONE</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">LEVEL 02</div>
+      <h2 class="sec-title">INVENTORY // SKILLS</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card"><h4>LANGUAGES</h4><div class="chip-row">
+        <span class="chip">Python</span><span class="chip">JavaScript (ES6+)</span><span class="chip">Java</span><span class="chip">HTML5</span><span class="chip">CSS3</span>
+      </div></div>
+      <div class="skill-card"><h4>FRAMEWORKS &amp; LIBRARIES</h4><div class="chip-row">
+        <span class="chip">FastAPI</span><span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span>
+      </div></div>
+      <div class="skill-card"><h4>DATABASES</h4><div class="chip-row">
+        <span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">Firebase Realtime DB</span><span class="chip">Firestore</span>
+      </div></div>
+      <div class="skill-card"><h4>CLOUD &amp; DEVOPS</h4><div class="chip-row">
+        <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Vercel</span><span class="chip">Google Cloud Run</span><span class="chip">Firebase</span><span class="chip">Cloudinary</span>
+      </div></div>
+      <div class="skill-card"><h4>AI &amp; APIS</h4><div class="chip-row">
+        <span class="chip">Google Gemini AI (1.5 Flash)</span><span class="chip">RESTful APIs</span><span class="chip">JWT Auth</span>
+      </div></div>
+      <div class="skill-card"><h4>DESIGN &amp; UX</h4><div class="chip-row">
+        <span class="chip">Figma</span><span class="chip">Framer</span><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">Wireframing</span><span class="chip">Prototyping</span>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;">
+      <div class="sec-eyebrow" style="justify-content:center;">LEVEL 03</div>
+      <h2 class="sec-title">TABLE OF CONTENT</h2>
+      <p style="font-size:11px;color:var(--text-dim);margin-top:10px;letter-spacing:1px;">TAP A CARTRIDGE TO INSERT ▾</p>
+    </div>
+    <div class="cart-row">
+      <div class="cart" data-id="p1" style="--cart-color:linear-gradient(135deg,#e2554a,#7a1f1f);">
+        <span class="cart-status">LIVE</span>
+        <div class="cart-label">
+          <div class="cart-num">CART. 01</div>
+          <div><div class="cart-name">RESUME<br>SEEK</div><div class="cart-tag">AI · FASTAPI · REACT</div></div>
+        </div>
+      </div>
+      <div class="cart" data-id="p2" style="--cart-color:linear-gradient(135deg,#4a8fe2,#1f3f7a);">
+        <span class="cart-status">ONGOING</span>
+        <div class="cart-label">
+          <div class="cart-num">CART. 02</div>
+          <div><div class="cart-name">CAMPUS<br>LOST &amp; FOUND</div><div class="cart-tag">FULL-STACK · MERN-ish</div></div>
+        </div>
+      </div>
+      <div class="cart" data-id="p3" style="--cart-color:linear-gradient(135deg,#e2a53d,#7a4d1f);">
+        <span class="cart-status">LIVE</span>
+        <div class="cart-label">
+          <div class="cart-num">CART. 03</div>
+          <div><div class="cart-name">DESI<br>BITES</div><div class="cart-tag">VANILLA JS · SPA</div></div>
+        </div>
+      </div>
+      <div class="cart" data-id="p4" style="--cart-color:linear-gradient(135deg,#4ae28f,#1f7a4d);">
+        <span class="cart-status">SUBMITTED</span>
+        <div class="cart-label">
+          <div class="cart-num">CART. 04</div>
+          <div><div class="cart-name">RAKSHYA<br>AI</div><div class="cart-tag">REACT · FLASK · GEMINI</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="console-unit" id="consoleUnit">
+      <div class="console-top">
+        <div class="console-slot" id="consoleSlot">
+          <span class="slot-led" id="slotLed"></span>
+          <span class="slot-label">CARTRIDGE SLOT</span>
+        </div>
+      </div>
+      <div class="console-screen-frame" id="consoleScreenFrame">
+        <div class="console-idle" id="consoleIdle">
+          <div class="idle-icon">▤</div>
+          <div class="idle-text">NO CARTRIDGE DETECTED — SELECT ONE ABOVE<span class="caret2">&nbsp;</span></div>
+        </div>
+        <div class="console-content" id="consoleContent"></div>
+      </div>
+      <div class="console-base"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">LEVEL 04</div>
+      <h2 class="sec-title">PROGRESSION // EDUCATION</h2>
+    </div>
+    <div class="levels">
+      <div class="level">
+        <h4>PARUL UNIVERSITY</h4>
+        <div class="lvl-meta">B.Tech, Computer Science Engineering · Aug 2023 – May 2027 · Vadodara, Gujarat</div>
+        <p>Coursework: Data Structures &amp; Algorithms, OOP (Java/Python), DBMS, Computer Networks, Operating Systems, Software Engineering, Compiler Design.</p>
+        <span class="score-badge">CGPA 7.12 / 10.0</span>
+      </div>
+      <div class="level">
+        <h4>DIVINE PUBLIC SCHOOL</h4>
+        <div class="lvl-meta">Gorakhpur, Uttar Pradesh</div>
+        <p>Class 12 and Class 10 completed with consistent academic performance ahead of pursuing engineering.</p>
+        <span class="score-badge">Class 12 — 66.4%</span>
+        <span class="score-badge">Class 10 — 77.2%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">LEVEL 05</div>
+      <h2 class="sec-title">TROPHIES // CERTIFICATIONS</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card"><div class="ach-icon">★</div><h5>GSSoC'26 Selected Contributor</h5><span>GirlScript Summer of Code · Open Source · AI/Agents Track (competitive selection)</span></div>
+      <div class="ach-card"><div class="ach-icon">★</div><h5>AI Agents Intensive Course (5-Day)</h5><span>Google</span></div>
+      <div class="ach-card"><div class="ach-icon">★</div><h5>AWS Cloud Practitioner Essentials</h5><span>Amazon Web Services</span></div>
+      <div class="ach-card"><div class="ach-icon">★</div><h5>PU Hackathon 3.0</h5><span>Parul University · 2024</span></div>
+      <div class="ach-card"><div class="ach-icon">★</div><h5>Adobe India Hackathon</h5><span>Adobe · 2024</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-screen">
+      <div class="big">GAME OVER?</div>
+      <p>PRESS ANY BUTTON TO CONTINUE THE CONVERSATION</p>
+      <div class="contact-links">
+        <a class="clink" href="mailto:vikaskp034@gmail.com">✉ vikaskp034@gmail.com</a>
+        <a class="clink" href="https://linkedin.com/in/vikaskp034" target="_blank" rel="noopener">in/ linkedin.com/in/vikaskp034</a>
+        <a class="clink" href="https://github.com/Vikasbit" target="_blank" rel="noopener">⌥ github.com/Vikasbit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 VIKAS KUMAR PRAJAPATI — VADODARA, GUJARAT, INDIA — INSERT COIN TO CONTINUE</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
