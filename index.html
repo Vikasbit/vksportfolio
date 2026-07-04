@@ -38,7 +38,7 @@
       <div class="tag">GAME PORTFOLIO // BOOT SEQUENCE</div>
       <h1 class="title-pixel">VIKAS KUMAR<br>PRAJAPATI</h1>
       <div class="role-line" id="roleLine"></div>
-      <button class="start-btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">▸ START</button>
+      <button class="start-btn" id="startBtn">▸ START</button>
     </div>
   </div>
   <div class="hero-stand"></div>
@@ -54,8 +54,8 @@
     </div>
     <div class="about-row">
       <div class="about-panel" id="aboutPanel">
-        <p>B.Tech Computer Science Engineering student at Parul University (Class of 2027, CGPA 7.12) with 6+ years of freelance UI/UX and graphic design experience. Shipped multiple live, deployed web applications integrating Python, FastAPI, React.js, and Google Gemini AI.</p>
-        <p>Selected contributor for GSSoC'26 in the AI/Agents open-source track. Currently on the hunt for a Software Developer or UI/UX Designer role where design instinct and full-stack execution can ship real products.</p>
+        <p class="scramble-text">B.Tech Computer Science Engineering student at Parul University (Class of 2027, CGPA 7.12) with 6+ years of freelance UI/UX and graphic design experience. Shipped multiple live, deployed web applications integrating Python, FastAPI, React.js, and Google Gemini AI.</p>
+        <p class="scramble-text">Selected contributor for GSSoC'26 in the AI/Agents open-source track. Currently on the hunt for a Software Developer or UI/UX Designer role where design instinct and full-stack execution can ship real products.</p>
         <div class="loadbar"><div class="loadbar-fill" id="loadFill"></div></div>
         <div class="loadbar-label">LOADING PROFILE... <span id="loadPct">0%</span></div>
         <div class="stat-row">
@@ -211,6 +211,7 @@
         <div class="console-slot" id="consoleSlot">
           <span class="slot-led" id="slotLed"></span>
           <span class="slot-label">CARTRIDGE SLOT</span>
+          <span class="slot-chip" id="slotChip"></span>
         </div>
       </div>
       <div class="console-screen-frame" id="consoleScreenFrame">
